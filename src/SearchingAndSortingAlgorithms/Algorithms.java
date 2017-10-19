@@ -96,4 +96,20 @@ public class Algorithms {
 		}
 		return unsortedsequences;
 	}
+
+	public static List<String> sortWords(List<String> words) {
+		for (int i = 0; i < words.size(); i++) {
+			for (int x = i + 1; x < words.size(); x++) {
+				int value = words.get(x).compareTo(words.get(i));
+				if (x <= i) {
+					words.set(i, words.get(x));
+
+				} else {
+
+				}
+			}
+		}
+		// System.out.println(words);
+		return words;
+	}
 }
